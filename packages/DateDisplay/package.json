@@ -1,0 +1,21 @@
+{
+  "name": "@hodrobond/ui-datedisplay",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Adam Kazberuk <hodrobond@gmail.com>",
+  "homepage": "https://github.com/Hodrobond/BlogComponents/tree/master/packages/ui-datedisplay#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "__tests__"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "moment": "^2.27.0"
+  }
+}

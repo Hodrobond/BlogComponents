@@ -1,0 +1,45 @@
+import * as React from 'react'
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import DateDisplay from '@hodrobond/ui-datedisplay';
+
+export interface BlogPostCardInterface {
+  title: {
+    text: string,
+    link: string,
+  },
+  date: string,
+  description: string,
+}
+
+const Title = styled.h3`
+  font-size: 1.5em;
+  text-align: left;
+`;
+
+const BodyBlock = styled.div`
+  text-align: left;
+`;
+
+const BlogPostCard = ({
+  title: { text, link },
+  date,
+  description,
+}: BlogPostCardInterface) => (
+  <div>
+    <Title><a href={link} rel="noreferrer" target="_blank">{text}</a></Title>
+    <DateDisplay date={date} />
+    <BodyBlock>{description}</BodyBlock>
+  </div>
+);
+
+BlogPostCard.propTypes = {
+  title: PropTypes.shape({
+    text: PropTypes.string.isRequired,
+    link: PropTypes.string,
+  }).isRequired,
+  date: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
+
+export default BlogPostCard;

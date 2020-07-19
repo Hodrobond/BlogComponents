@@ -1,0 +1,22 @@
+{
+  "name": "@hodrobond/ui-blogpostcard",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Adam Kazberuk <hodrobond@gmail.com>",
+  "homepage": "https://github.com/Hodrobond/BlogComponents/tree/master/packages/blogPostCart#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@hodrobond/ui-datedisplay": "file:../DateDisplay",
+    "styled-components": "^5.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1"
+  }
+}
