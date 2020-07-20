@@ -24,6 +24,7 @@ const SidebarBlock = styled.div<SidebarBlockProps>`
   }
   transition: width 1s;
   height: 100%;
+  margin: 0;
 `;
 
 const RotationWrapperContainer = styled.div`
