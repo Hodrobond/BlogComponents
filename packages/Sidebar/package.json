@@ -1,0 +1,26 @@
+{
+  "name": "@hodrobond/ui-sidebar",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Adam Kazberuk <hodrobond@gmail.com>",
+  "homepage": "https://github.com/Hodrobond/BlogComponents/tree/master/packages/sidebar#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hodrobond/BlogComponents.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Hodrobond/BlogComponents/issues"
+  },
+  "dependencies": {
+    "@hodrobond/ui-hamburgericon": "^1.0.0",
+    "@hodrobond/ui-rotationwrapper": "file:../RotationWrapper"
+  }
+}

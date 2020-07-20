@@ -1,0 +1,29 @@
+{
+  "name": "@hodrobond/ui-rotationwrapper",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Adam Kazberuk <hodrobond@gmail.com>",
+  "homepage": "https://github.com/Hodrobond/BlogComponents/tree/master/packages/rotationWrapper#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hodrobond/BlogComponents.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Hodrobond/BlogComponents/issues"
+  },
+  "dependencies": {
+    "@hodrobond/ui-hamburgericon": "file:../HamburgerIcon"
+  }
+}
