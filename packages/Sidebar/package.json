@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "@hodrobond/ui-hamburgericon": "^1.0.2",
-    "@hodrobond/ui-rotationwrapper": "file:../RotationWrapper"
+    "@hodrobond/ui-rotationwrapper": "^1.0.2"
   }
 }

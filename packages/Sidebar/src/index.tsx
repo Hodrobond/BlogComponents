@@ -17,7 +17,7 @@ interface SidebarBlockProps {
 
 const SidebarBlock = styled.div<SidebarBlockProps>`
   position: fixed;
-  width: ${props => (props.open ? '25%' : '3rem')};
+  width: ${props => (props.open ? '26rem' : '3rem')};
   @media (max-width: 480px) {
     width: ${props => (props.open ? '100%' : '3rem')};
     transition: width 1s;

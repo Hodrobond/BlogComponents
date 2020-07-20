@@ -12,6 +12,10 @@ interface WrapperProps {
 }
 
 const ContentWrapper = styled.div<WrapperProps>`
+  width: 25rem;
+  @media (max-width: 480px) {
+    width: ${props => (props.open ? '100%' : '3rem')};
+  }
   position: relative;
   visibility: ${props => (props.open ? 'visible' : 'hidden')};
   opacity: ${props => (props.open ? '1' : '0')};
@@ -31,6 +35,13 @@ const Title = styled.h3`
   margin-top: 0;
 `;
 
+const ChildrenWrapper = styled.div<WrapperProps>`
+  width: 25rem;
+  visibility: ${props => (props.open ? 'visible' : 'hidden')};
+  opacity: ${props => (props.open ? '1' : '0')};
+  transition: visibility 0.5s linear,opacity 0.5s linear;
+`;
+
 const Wrapper = ({
   title = 'Menu',
   open = false,
@@ -41,7 +52,9 @@ const Wrapper = ({
       {title && (
         <Title>{title}</Title>
       )}
-      {children}
+      <ChildrenWrapper open={open}>
+        {children}
+      </ChildrenWrapper>
     </ContentWrapper>
   )
 };
