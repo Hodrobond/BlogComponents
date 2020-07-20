@@ -20,7 +20,7 @@ const ContentWrapper = styled.div<WrapperProps>`
   z-index: 900;
   height: 100%;
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
-  padding: 2rem;
+  padding-left: 1rem;
 `
 
 const Title = styled.h3`

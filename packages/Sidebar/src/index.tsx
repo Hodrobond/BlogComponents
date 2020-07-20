@@ -26,6 +26,12 @@ const SidebarBlock = styled.div<SidebarBlockProps>`
   height: 100%;
 `;
 
+const RotationWrapperContainer = styled.div`
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  float: right;
+`;
+
 const Sidebar: FunctionComponent<SidebarInterface> = ({
   title = 'Menu',
   children,
@@ -35,15 +41,17 @@ const Sidebar: FunctionComponent<SidebarInterface> = ({
     <SidebarBlock
       open={open}
     >
-      <RotationWrapper
-        onClick={() => setOpen(!open)}
-        rotate={open}
-        s={{
-          zIndex: 901,
-        }}
-      >
-        <HamburgerIcon/>
-      </RotationWrapper>
+      <RotationWrapperContainer>
+        <RotationWrapper
+          onClick={() => setOpen(!open)}
+          rotate={open}
+          s={{
+            zIndex: 901,
+          }}
+        >
+          <HamburgerIcon/>
+        </RotationWrapper>
+      </RotationWrapperContainer>
       <Wrapper
         title={title}
         open={open}
