@@ -14,7 +14,7 @@ interface WrapperProps {
 const ContentWrapper = styled.div<WrapperProps>`
   width: 26rem;
   @media (max-width: 480px) {
-    width: ${props => (props.open ? '100%' : '3rem')};
+    width: 100%;
   }
   position: relative;
   visibility: ${props => (props.open ? 'visible' : 'hidden')};
