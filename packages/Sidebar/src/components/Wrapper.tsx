@@ -12,10 +12,15 @@ interface WrapperProps {
 }
 
 const ContentWrapper = styled.div<WrapperProps>`
-  position: fixed;
+  position: relative;
   visibility: ${props => (props.open ? 'visible' : 'hidden')};
   opacity: ${props => (props.open ? '1' : '0')};
   transition: visibility 0.5s linear,opacity 0.5s linear;
+  background: #d0ecd9;
+  z-index: 900;
+  height: 100%;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+  padding: 2rem;
 `
 
 const Title = styled.h3`
@@ -23,7 +28,7 @@ const Title = styled.h3`
   text-align: left;
   overflow: hidden;
   width: 100%;
-  margin: 0;
+  margin-top: 0;
 `;
 
 const Wrapper = ({
@@ -34,7 +39,7 @@ const Wrapper = ({
   return (
     <ContentWrapper open={open} >
       {title && (
-        <Title >{title}</Title>
+        <Title>{title}</Title>
       )}
       {children}
     </ContentWrapper>

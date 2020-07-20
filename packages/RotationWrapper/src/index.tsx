@@ -7,6 +7,7 @@ export interface RotationWrapperProps {
   onClick: Function
   s: {
     display: string | undefined
+    zIndex: string | undefined
   } | undefined
 }
 
@@ -15,16 +16,19 @@ interface IconButtonWrapperProps {
   onClick: Function
   s: {
     display: string | undefined
+    zIndex: string | undefined
   } | undefined
 }
 
 const IconButtonWrapper = styled.div<IconButtonWrapperProps>`
+  position: relative;
   float: right;
-  transform: rotate(0deg);
   overflow: hidden;
+  transform: rotate(0deg);
   transition: all 1s ease-out;
   transform: ${props => (props.rotate ? `rotate(90deg)` : "")};
   display: ${props => props.s && props.s.display ? props.s.display : 'inline-block'};
+  z-index: ${props => props.s && props.s.zIndex ? props.s.zIndex : ''};
 `;
 
 const RotationWrapper: FunctionComponent<RotationWrapperProps> = ({ children, rotate, onClick, s }) => {

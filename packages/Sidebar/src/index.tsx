@@ -16,17 +16,15 @@ interface SidebarBlockProps {
 };
 
 const SidebarBlock = styled.div<SidebarBlockProps>`
-  width: ${props => (props.open ? '35%' : '3rem')};
+  position: fixed;
+  width: ${props => (props.open ? '25%' : '3rem')};
   @media (max-width: 480px) {
     width: ${props => (props.open ? '100%' : '3rem')};
     transition: width 1s;
   }
   transition: width 1s;
+  height: 100%;
 `;
-
-interface WrapperProps {
-  open: boolean,
-}
 
 const Sidebar: FunctionComponent<SidebarInterface> = ({
   title = 'Menu',
@@ -40,6 +38,9 @@ const Sidebar: FunctionComponent<SidebarInterface> = ({
       <RotationWrapper
         onClick={() => setOpen(!open)}
         rotate={open}
+        s={{
+          zIndex: 901,
+        }}
       >
         <HamburgerIcon/>
       </RotationWrapper>
