@@ -6,6 +6,9 @@
   "homepage": "https://github.com/Hodrobond/BlogComponents/tree/master/packages/ui-datedisplay#readme",
   "license": "ISC",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "directories": {
     "test": "__tests__"
   },
