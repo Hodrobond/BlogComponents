@@ -12,7 +12,7 @@ interface WrapperProps {
 }
 
 const ContentWrapper = styled.div<WrapperProps>`
-  width: 26rem;
+  width: 25rem;
   @media (max-width: 480px) {
     width: 100%;
   }
@@ -25,6 +25,7 @@ const ContentWrapper = styled.div<WrapperProps>`
   height: 100%;
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
   padding-left: 1rem;
+  padding-top: 1rem;
 `
 
 const Title = styled.h3`

@@ -27,10 +27,11 @@ const SidebarBlock = styled.div<SidebarBlockProps>`
   margin: 0;
 `;
 
-const RotationWrapperContainer = styled.div`
-  margin-top: 0.5rem;
-  margin-right: 0.5rem;
-  float: right;
+const RotationWrapperContainer = styled.div<SidebarBlockProps>`
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  margin-right: ${props => (props.open ? '0' : '-0.5rem')};
 `;
 
 const Sidebar: FunctionComponent<SidebarInterface> = ({
@@ -42,7 +43,7 @@ const Sidebar: FunctionComponent<SidebarInterface> = ({
     <SidebarBlock
       open={open}
     >
-      <RotationWrapperContainer>
+      <RotationWrapperContainer open={open}>
         <RotationWrapper
           onClick={() => setOpen(!open)}
           rotate={open}

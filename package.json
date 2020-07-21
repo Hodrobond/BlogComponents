@@ -6,7 +6,7 @@
   "scripts": {
     "storybook": "start-storybook -p 9009",
     "test": "jest",
-    "build": "lerna exec --parallel 'BABEL_ENV=build babel src --out-dir dist --source-maps --extensions .ts,.tsx --config-file ../../babel.config.js --delete-dir-on-start --no-comments'",
+    "build": "lerna exec --parallel 'BABEL_ENV=build babel src --out-dir dist --source-maps --copy-files --extensions .ts,.tsx --config-file ../../babel.config.js --delete-dir-on-start --no-comments'",
     "start": "lerna bootstrap && npm run build && npm run test",
     "build-storybook": "build-storybook"
   },
@@ -26,6 +26,7 @@
   "dependencies": {
     "@storybook/client-api": "^5.3.19",
     "@types/styled-components": "^5.1.1",
+    "babel-plugin-file-loader": "^2.0.0",
     "react-dom": "^16.13.1",
     "react-scripts": "2.1.8",
     "storybook": "^5.3.19",

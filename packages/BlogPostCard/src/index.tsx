@@ -21,16 +21,22 @@ const BodyBlock = styled.div`
   text-align: left;
 `;
 
+const BlogPostContainer = styled.div`
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+`;
+
 const BlogPostCard = ({
   title: { text, link },
   date,
   description,
 }: BlogPostCardInterface) => (
-  <div>
+  <BlogPostContainer>
     <Title><a href={link} rel="noreferrer" target="_blank">{text}</a></Title>
     <DateDisplay date={date} />
     <BodyBlock>{description}</BodyBlock>
-  </div>
+  </BlogPostContainer>
 );
 
 BlogPostCard.propTypes = {
