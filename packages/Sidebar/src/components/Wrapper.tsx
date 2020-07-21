@@ -26,7 +26,7 @@ const ContentWrapper = styled.div<WrapperProps>`
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
   padding-left: 1rem;
   padding-top: 1rem;
-`
+`;
 
 const Title = styled.h3`
   font-size: 1.5em;
