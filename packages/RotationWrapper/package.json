@@ -24,6 +24,7 @@
     "url": "https://github.com/Hodrobond/BlogComponents/issues"
   },
   "dependencies": {
+    "@hodrobond/ui-developercard": "^1.0.10",
     "@hodrobond/ui-hamburgericon": "^1.0.6"
   }
 }
