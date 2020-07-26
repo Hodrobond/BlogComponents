@@ -15,9 +15,11 @@ const StyledContainer = styled.div<ThemeWrapperProps>`
 const ThemeWrapper: FunctionComponent<ThemeWrapperProps> = ({
   children,
   primaryColor,
+  primaryContentBackground,
 }) => (
   <StyledContainer
     primaryColor={primaryColor}
+    primaryContentBackground={primaryContentBackground}
   >
     {children}
   </StyledContainer>
