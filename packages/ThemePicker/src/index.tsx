@@ -23,7 +23,9 @@ const ThemePicker: FunctionComponent<ThemePickerProps> = ({
 }) => {
   const [currentSelect, updateCurrentSelect] = useState(selected);
   const wrapperOnChange = useMemo(() => (event: React.ChangeEvent<HTMLInputElement>) => {
-    updateCurrentSelect(event.target.value);
+    if (event && event.target && event.target.value) {
+      updateCurrentSelect(event.target.value);
+    }
     if (typeof handleChange === 'function') {
       handleChange(event);
     }
