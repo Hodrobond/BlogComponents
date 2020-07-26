@@ -12,7 +12,7 @@ interface WrapperProps {
 }
 
 const ContentWrapper = styled.div<WrapperProps>`
-  background: var(--primary-content-background)
+  background: var(--primary-content-background);
 
   width: 26rem;
   @media (max-width: 480px) {

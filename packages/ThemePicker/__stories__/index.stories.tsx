@@ -22,7 +22,7 @@ export const ThemePickerStory = () => {
       handleChange={handleChange}
     />
     <ThemeWrapper
-      {...Themes[theme]}
+      s={Themes[theme]}
     >
       <HamburgerIcon/>
     </ThemeWrapper>

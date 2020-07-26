@@ -12,11 +12,6 @@ export interface ThemePickerProps {
   primaryContentBackground?: string
 };
 
-const StyledContainer = styled.div<ThemePickerProps>`
-  --primary-color: ${props => (props.primaryColor ? props.primaryColor : "#7ED6DF")};
-  --primary-content-background: ${props => (props.primaryContentBackground ? props.primaryContentBackground : "#FFFFFF")};
-`;
-
 const ThemePicker: FunctionComponent<ThemePickerProps> = ({
   selected,
   handleChange,

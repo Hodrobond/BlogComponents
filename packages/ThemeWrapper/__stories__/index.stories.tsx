@@ -19,7 +19,7 @@ export const ThemeWrapperStory = () => {
   const value = select(label, options, defaultValue, groupId);
   return (
   <ThemeWrapper
-    {...Themes[value]}
+    s={Themes[value]}
   >
     <HamburgerIcon/>
   </ThemeWrapper>
