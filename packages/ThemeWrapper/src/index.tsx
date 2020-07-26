@@ -14,6 +14,7 @@ export interface ThemeWrapperProps {
 const StyledContainer = styled.div<ContainerProps>`
   --primary-color: ${props => (props.primaryColor ? props.primaryColor : "#7ED6DF")};
   --primary-content-background: ${props => (props.primaryContentBackground ? props.primaryContentBackground : "#FFFFFF")};
+  
 `;
 
 const ThemeWrapper: FunctionComponent<ThemeWrapperProps> = ({
