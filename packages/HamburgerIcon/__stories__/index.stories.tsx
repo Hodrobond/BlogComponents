@@ -8,6 +8,10 @@ export default {
   decorators: [withKnobs],
 };
 
-export const HamburgerIconStory = () => (
+export const HamburgerIconDefault = () => (
+  <HamburgerIcon />
+);
+
+export const HamburgerIconProps = () => (
   <HamburgerIcon fill={color('Color', '#7ED6DF')} />
 );
