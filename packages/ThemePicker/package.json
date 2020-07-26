@@ -1,6 +1,6 @@
 {
   "name": "@hodrobond/ui-themepicker",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "> TODO: description",
   "author": "Adam Kazberuk <hodrobond@gmail.com>",
   "homepage": "https://github.com/Hodrobond/BlogComponents/tree/master/packages/themePicker#readme",
@@ -26,6 +26,6 @@
   "dependencies": {
     "@hodrobond/ui-hamburgericon": "^1.0.14",
     "@hodrobond/ui-themes": "file:../Themes",
-    "@hodrobond/ui-themewrapper": "^1.0.17"
+    "@hodrobond/ui-themewrapper": "^1.0.18"
   }
 }
