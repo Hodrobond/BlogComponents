@@ -12,6 +12,8 @@ interface WrapperProps {
 }
 
 const ContentWrapper = styled.div<WrapperProps>`
+  background: var(--primary-content-background)
+
   width: 26rem;
   @media (max-width: 480px) {
     width: 100%;
@@ -20,7 +22,6 @@ const ContentWrapper = styled.div<WrapperProps>`
   visibility: ${props => (props.open ? 'visible' : 'hidden')};
   opacity: ${props => (props.open ? '1' : '0')};
   transition: visibility 0.5s linear,opacity 0.5s linear;
-  background: #d0ecd9;
   z-index: 900;
   height: 100%;
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
