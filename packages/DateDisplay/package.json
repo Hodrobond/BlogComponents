@@ -16,7 +16,8 @@
     "access": "public"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "check-types": "tsc -b tsconfig.json"
   },
   "dependencies": {
     "@hodrobond/ui-text": "file:../Text",

@@ -1,7 +1,4 @@
 module.exports = {
-  compilerOptions: {
-    jsx: 'preserve',
-  },
   env: {
     browser: true,
     commonjs: true,
