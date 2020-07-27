@@ -12,14 +12,14 @@ export interface SidebarInterface {
 
 interface SidebarBlockProps {
   open: boolean
-  width: string
-};
+  width?: string
+}
 
 const SidebarBlock = styled.div<SidebarBlockProps>`
   position: fixed;
-  width: ${props => (props.open ? '26rem' : '3rem')};
+  width: ${(props) => (props.open ? '26rem' : '3rem')};
   @media (max-width: 480px) {
-    width: ${props => (props.open ? '100%' : '3rem')};
+    width: ${(props) => (props.open ? '100%' : '3rem')};
     transition: width 1s;
   }
   transition: width 1s;
@@ -31,7 +31,7 @@ const RotationWrapperContainer = styled.div<SidebarBlockProps>`
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  margin-right: ${props => (props.open ? '0' : '-0.5rem')};
+  margin-right: ${(props) => (props.open ? '0' : '-0.5rem')};
 `;
 
 const Sidebar: FunctionComponent<SidebarInterface> = ({
@@ -48,7 +48,7 @@ const Sidebar: FunctionComponent<SidebarInterface> = ({
           onClick={() => setOpen(!open)}
           rotate={open}
           s={{
-            zIndex: 901,
+            zIndex: '901',
           }}
         >
           <HamburgerIcon/>
@@ -61,7 +61,7 @@ const Sidebar: FunctionComponent<SidebarInterface> = ({
         {children}
       </Wrapper>
     </SidebarBlock>
-  )
+  );
 };
 
 Sidebar.propTypes = {

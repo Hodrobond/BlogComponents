@@ -6,8 +6,8 @@ import Text from '@hodrobond/ui-text';
 
 export interface DateDisplayInterface {
   date: string,
-  languageCode: string,
-  format: string,
+  languageCode?: string,
+  format?: string,
 }
 
 const DateDisplay = ({

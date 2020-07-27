@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 interface ContainerProps {
+  children?: React.ReactNode
   textAlign?: string
 }
 
@@ -25,7 +26,6 @@ const Text: FunctionComponent<TextInterface> = ({
 );
 
 Text.propTypes = {
-  children: PropTypes.element,
   s: PropTypes.shape({
     textAlign: PropTypes.string,
   }),

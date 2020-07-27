@@ -20,8 +20,8 @@ const ContentWrapper = styled.div<WrapperProps>`
     width: 100%;
   }
   position: relative;
-  visibility: ${props => (props.open ? 'visible' : 'hidden')};
-  opacity: ${props => (props.open ? '1' : '0')};
+  visibility: ${(props) => (props.open ? 'visible' : 'hidden')};
+  opacity: ${(props) => (props.open ? '1' : '0')};
   transition: visibility 0.5s linear,opacity 0.5s linear;
   z-index: 900;
   height: 100%;
@@ -40,8 +40,8 @@ const Title = styled.h3`
 
 const ChildrenWrapper = styled.div<WrapperProps>`
   width: 25rem;
-  visibility: ${props => (props.open ? 'visible' : 'hidden')};
-  opacity: ${props => (props.open ? '1' : '0')};
+  visibility: ${(props) => (props.open ? 'visible' : 'hidden')};
+  opacity: ${(props) => (props.open ? '1' : '0')};
   transition: visibility 0.5s linear,opacity 0.5s linear;
 `;
 
@@ -49,18 +49,16 @@ const Wrapper: FunctionComponent<WrapperInterface> = ({
   title = 'Menu',
   open = false,
   children,
-}) => {
-  return (
-    <ContentWrapper open={open} >
-      {title && (
-        <Title><Text>{title}</Text></Title>
-      )}
-      <ChildrenWrapper open={open}>
-        {children}
-      </ChildrenWrapper>
-    </ContentWrapper>
-  )
-};
+}) => (
+  <ContentWrapper open={open} >
+    {title && (
+      <Title><Text>{title}</Text></Title>
+    )}
+    <ChildrenWrapper open={open}>
+      {children}
+    </ChildrenWrapper>
+  </ContentWrapper>
+);
 
 Wrapper.propTypes = {
   title: PropTypes.string,

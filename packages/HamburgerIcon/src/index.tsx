@@ -3,7 +3,7 @@ import styled from "styled-components";
 import PropTypes from 'prop-types';
 
 export interface HamburgerIconProps {
-  fill: string,
+  fill?: string,
 }
 
 const HamburgerStyle = styled.svg<HamburgerIconProps>`
