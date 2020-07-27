@@ -5,11 +5,9 @@ import PropTypes from 'prop-types';
 export interface HamburgerIconProps {
   fill: string,
 }
-//${props => (props.fill ? props.fill : "var( — primary-color)")};
-//
 
 const HamburgerStyle = styled.svg<HamburgerIconProps>`
-  fill: var(--primary-color)
+  fill: ${props => (props.fill ? props.fill : "var(--primary-color)")};
 `;
 
 const HamburgerIcon = ({
