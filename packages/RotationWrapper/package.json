@@ -1,6 +1,6 @@
 {
   "name": "@hodrobond/ui-rotationwrapper",
-  "version": "1.0.14",
+  "version": "1.0.20",
   "description": "> TODO: description",
   "author": "Adam Kazberuk <hodrobond@gmail.com>",
   "homepage": "https://github.com/Hodrobond/BlogComponents/tree/master/packages/rotationWrapper#readme",
@@ -24,7 +24,7 @@
     "url": "https://github.com/Hodrobond/BlogComponents/issues"
   },
   "dependencies": {
-    "@hodrobond/ui-developercard": "^1.0.10",
-    "@hodrobond/ui-hamburgericon": "^1.0.14"
+    "@hodrobond/ui-developercard": "^1.0.20",
+    "@hodrobond/ui-hamburgericon": "^1.0.20"
   }
 }
