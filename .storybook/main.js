@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   stories: ['../packages/**/*.stories.tsx'],
   addons: [
@@ -8,6 +10,10 @@ module.exports = {
     '@storybook/addon-viewport/register',
   ],
   webpackFinal: async config => {
+    config.resolve.modules = [
+      ...(config.resolve.modules || []),
+      path.resolve(__dirname, "../packages"),
+    ];
     config.module.rules.push({
       test: /\.(ts|tsx)$/,
       loader: require.resolve('babel-loader'),
