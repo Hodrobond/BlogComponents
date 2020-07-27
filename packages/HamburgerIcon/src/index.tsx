@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { FunctionComponent } from 'react'
 import styled from "styled-components";
 import PropTypes from 'prop-types';
 
@@ -10,7 +10,7 @@ const HamburgerStyle = styled.svg<HamburgerIconProps>`
   fill: ${props => (props.fill ? props.fill : "var(--primary-color)")};
 `;
 
-const HamburgerIcon = ({
+const HamburgerIcon: FunctionComponent<HamburgerIconProps> = ({
   fill,
 }) => (
   <HamburgerStyle fill={fill} viewBox="0 0 100 80" width="40" height="40">

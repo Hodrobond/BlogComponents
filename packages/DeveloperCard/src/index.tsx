@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Text from '@hodrobond/ui-text';
 
-const image = require('./assets/profile-pic.jpg');
+import image from './assets/profile-pic.jpg';
 
 const CardContainer = styled.div`
   background: var(--primary-content-background);
@@ -14,16 +14,16 @@ const CardContainer = styled.div`
   margin: 1rem;
 `;
 
-const ImageWRapper = styled.img`
+const ImageWrapper = styled.img`
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 1rem;
   margin: 0.5rem;
-`
+`;
 
 const DeveloperCard = () => (
   <CardContainer>
-    <ImageWRapper src={image}/>
+    <ImageWrapper src={image}/>
     <Text>Written by<strong> Adam Kazberuk </strong>who is in San Francisco.</Text>
   </CardContainer>
 );

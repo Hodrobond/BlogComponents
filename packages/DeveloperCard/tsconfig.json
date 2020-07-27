@@ -2,13 +2,15 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "rootDirs": ["src", "__stories__"],
+    "rootDir": "src",
     "jsx": "react"
   },
+  "include": [".d.ts"],
   "exclude": [
     "node_modules",
     "**/*.test.ts",
     "dist/**",
-    "__tests__"
+    "__tests__",
+    "__stories__"
   ]
 }

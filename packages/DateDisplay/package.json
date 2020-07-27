@@ -17,7 +17,7 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "check-types": "tsc -b tsconfig.json"
+    "check-types": "tsc -p ."
   },
   "dependencies": {
     "@hodrobond/ui-text": "file:../Text",

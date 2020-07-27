@@ -8,6 +8,7 @@
     "test": "jest",
     "build": "lerna exec --parallel 'BABEL_ENV=build babel src --out-dir dist --source-maps --copy-files --extensions .ts,.tsx --config-file ../../babel.config.js --delete-dir-on-start --no-comments'",
     "start": "lerna bootstrap && npm run build && npm run test",
+    "check-types": "lerna run check-types",
     "build-storybook": "build-storybook"
   },
   "repository": {
@@ -24,10 +25,11 @@
   },
   "homepage": "https://github.com/Hodrobond/BlogComponents#readme",
   "dependencies": {
-    "@hodrobond/ui-themepicker": "file:packages/ThemePicker",
-    "@hodrobond/ui-themes": "file:packages/Themes",
-    "@hodrobond/ui-themewrapper": "file:packages/ThemeWrapper",
+    "@hodrobond/ui-themepicker": "1.0.20",
+    "@hodrobond/ui-themes": "1.0.20",
+    "@hodrobond/ui-themewrapper": "1.0.20",
     "@storybook/client-api": "^5.3.19",
+    "@types/storybook__addon-knobs": "^5.2.1",
     "@types/styled-components": "^5.1.1",
     "babel-plugin-file-loader": "^2.0.0",
     "react-dom": "^16.13.1",
