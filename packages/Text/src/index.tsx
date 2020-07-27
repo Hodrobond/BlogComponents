@@ -12,7 +12,7 @@ export interface TextInterface {
 
 const TextContainer = styled.div<ContainerProps>`
   color: var(--primary-text-color);
-  text-align: ${props => (props.textAlign ? props.textAlign : "left")}
+  text-align: ${(props) => (props.textAlign ? props.textAlign : 'left')}
 `;
 
 const Text: FunctionComponent<TextInterface> = ({
@@ -25,9 +25,10 @@ const Text: FunctionComponent<TextInterface> = ({
 );
 
 Text.propTypes = {
+  children: PropTypes.element,
   s: PropTypes.shape({
     textAlign: PropTypes.string,
-  })
+  }),
 };
 
 export default Text;
