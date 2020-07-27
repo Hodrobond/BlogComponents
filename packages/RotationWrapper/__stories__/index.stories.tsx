@@ -22,21 +22,6 @@ const WithClick = () => {
   )
 }
 
-const WithClick2 = () => {
-  const [stateRotate, setRotate] = useState(false);
-  return (
-    <RotationWrapper
-      onClick={() => setRotate(!stateRotate)}
-      rotate={stateRotate}
-    >
-      <DeveloperCard/>
-    </RotationWrapper>
-  )
-}
 export const RotationWrapperStory = () => (
   <WithClick/>
 );
-
-export const AdamTest23 = () => (
-  <WithClick2/>
-)

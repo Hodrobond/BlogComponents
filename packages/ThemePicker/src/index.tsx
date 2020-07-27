@@ -29,7 +29,7 @@ const ThemePicker: FunctionComponent<ThemePickerProps> = ({
     <form>
       <label>
         Pick your favorite theme:
-        <select value={selected} onChange={wrapperOnChange}>
+        <select value={currentSelect} onChange={wrapperOnChange}>
           {themeSelectSchema.map(element => (
             <option value={element.key}>{element.key}</option>
           ))}

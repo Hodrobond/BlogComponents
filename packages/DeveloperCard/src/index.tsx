@@ -1,6 +1,7 @@
 import * as React from 'react'
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Text from '@hodrobond/ui-text';
 
 const image = require('./assets/profile-pic.jpg');
 
@@ -23,7 +24,7 @@ const ImageWRapper = styled.img`
 const DeveloperCard = () => (
   <CardContainer>
     <ImageWRapper src={image}/>
-    <span>Written by<strong> Adam Kazberuk </strong>who is in San Francisco.</span>
+    <Text>Written by<strong> Adam Kazberuk </strong>who is in San Francisco.</Text>
   </CardContainer>
 );
 

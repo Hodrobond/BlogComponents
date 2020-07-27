@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, FunctionComponent } from 'react'
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Text from '@hodrobond/ui-text';
 
 export interface WrapperInterface {
   title: string,
@@ -44,15 +45,15 @@ const ChildrenWrapper = styled.div<WrapperProps>`
   transition: visibility 0.5s linear,opacity 0.5s linear;
 `;
 
-const Wrapper = ({
+const Wrapper: FunctionComponent<WrapperInterface> = ({
   title = 'Menu',
   open = false,
   children,
-}: WrapperInterface) => {
+}) => {
   return (
     <ContentWrapper open={open} >
       {title && (
-        <Title>{title}</Title>
+        <Title><Text>{title}</Text></Title>
       )}
       <ChildrenWrapper open={open}>
         {children}

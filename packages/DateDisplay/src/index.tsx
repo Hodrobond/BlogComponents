@@ -2,6 +2,7 @@ import * as React from 'react'
 import PropTypes from 'prop-types';
 import moment from 'moment';
 import styled from 'styled-components';
+import Text from '@hodrobond/ui-text';
 
 export interface DateDisplayInterface {
   date: string,
@@ -9,18 +10,14 @@ export interface DateDisplayInterface {
   format: string,
 }
 
-const DateBlock = styled.div`
-  text-align: left;
-`;
-
 const DateDisplay = ({
   date,
   languageCode = 'en',
   format = 'MMMM Do, YYYY',
 }: DateDisplayInterface) => (
-  <DateBlock>
+  <Text s={{ textAlign: 'left' }}>
     {moment(date).locale(languageCode).format(format)}
-  </DateBlock>
+  </Text>
 );
 
 DateDisplay.propTypes = {

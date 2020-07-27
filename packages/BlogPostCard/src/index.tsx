@@ -2,6 +2,8 @@ import * as React from 'react'
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import DateDisplay from '@hodrobond/ui-datedisplay';
+import Text from '@hodrobond/ui-text';
+import Link from '@hodrobond/ui-link';
 
 export interface BlogPostCardInterface {
   title: {
@@ -14,10 +16,6 @@ export interface BlogPostCardInterface {
 
 const Title = styled.h3`
   font-size: 1.5em;
-  text-align: left;
-`;
-
-const BodyBlock = styled.div`
   text-align: left;
 `;
 
@@ -34,9 +32,11 @@ const BlogPostCard = ({
   description,
 }: BlogPostCardInterface) => (
   <BlogPostContainer>
-    <Title><a href={link} rel="noreferrer" target="_blank">{text}</a></Title>
+    <Title><Link href={link} target="_blank">{text}</Link></Title>
     <DateDisplay date={date} />
-    <BodyBlock>{description}</BodyBlock>
+    <Text s={{ textAlign: 'left' }} >
+      {description}
+    </Text>
   </BlogPostContainer>
 );
 

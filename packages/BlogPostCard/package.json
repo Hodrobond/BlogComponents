@@ -16,7 +16,9 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@hodrobond/ui-datedisplay": "^1.0.6",
+    "@hodrobond/ui-datedisplay": "file:../DateDisplay",
+    "@hodrobond/ui-link": "file:../Link",
+    "@hodrobond/ui-text": "file:../Text",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "styled-components": "^5.1.1"

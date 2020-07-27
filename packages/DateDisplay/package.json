@@ -19,6 +19,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
+    "@hodrobond/ui-text": "file:../Text",
     "moment": "^2.27.0"
   }
 }

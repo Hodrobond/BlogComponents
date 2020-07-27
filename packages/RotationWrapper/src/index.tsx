@@ -5,19 +5,19 @@ import PropTypes from 'prop-types';
 export interface RotationWrapperProps {
   rotate: boolean
   onClick: Function
-  s: {
+  s?: {
     display: string | undefined
     zIndex: string | undefined
-  } | undefined
+  }
 }
 
 interface IconButtonWrapperProps {
   rotate: boolean
   onClick: Function
-  s: {
+  s?: {
     display: string | undefined
     zIndex: string | undefined
-  } | undefined
+  }
 }
 
 const IconButtonWrapper = styled.div<IconButtonWrapperProps>`
@@ -48,6 +48,7 @@ RotationWrapper.propTypes = {
   onClick: PropTypes.func,
   s: PropTypes.shape({
     display: PropTypes.string,
+    zIndex: PropTypes.string,
   }),
 };
 

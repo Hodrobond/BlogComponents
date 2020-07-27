@@ -1,14 +1,11 @@
 {
-  "name": "@hodrobond/ui-developercard",
-  "version": "1.0.10",
+  "name": "@hodrobond/ui-link",
+  "version": "1.0.19",
   "description": "> TODO: description",
   "author": "Adam Kazberuk <hodrobond@gmail.com>",
-  "homepage": "https://github.com/Hodrobond/BlogComponents/tree/master/packages/developerintro#readme",
+  "homepage": "https://github.com/Hodrobond/BlogComponents/tree/master/packages/Link#readme",
   "license": "ISC",
   "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
   "directories": {
     "test": "__tests__"
   },
@@ -21,8 +18,5 @@
   },
   "bugs": {
     "url": "https://github.com/Hodrobond/BlogComponents/issues"
-  },
-  "dependencies": {
-    "@hodrobond/ui-text": "file:../Text"
   }
 }
