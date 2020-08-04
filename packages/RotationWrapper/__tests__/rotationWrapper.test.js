@@ -1,7 +1,19 @@
-'use strict';
+import React from 'react';
+import { mount } from 'enzyme';
 
-const rotationWrapper = require('..');
+import RotationWrapper from '..';
 
-describe('rotationWrapper', () => {
-    it('needs tests');
+const testContent = 'Something something test';
+
+describe('RotationWrapper', () => {
+  it('Default', () => {
+    const wrapper = mount(
+      <RotationWrapper>
+        {testContent}
+      </RotationWrapper>,
+    );
+    expect(wrapper.find('div').props().rotate).toEqual(false);
+    wrapper.simulate('click');
+    expect(wrapper.find('div').props().rotate).toEqual(true);
+  });
 });

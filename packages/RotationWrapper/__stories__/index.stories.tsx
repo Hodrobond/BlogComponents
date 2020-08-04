@@ -1,8 +1,7 @@
-import React, { FunctionComponent, useState } from "react";
-import { withKnobs, color } from "@storybook/addon-knobs";
-import RotationWrapper from '../src';
+import React from 'react';
+import { withKnobs } from '@storybook/addon-knobs';
 import HamburgerIcon from '@hodrobond/ui-hamburgericon';
-import DeveloperCard from '@hodrobond/ui-developercard';
+import RotationWrapper from '../src';
 
 export default {
   component: RotationWrapper,
@@ -10,18 +9,8 @@ export default {
   decorators: [withKnobs],
 };
 
-const WithClick = () => {
-  const [stateRotate, setRotate] = useState(false);
-  return (
-    <RotationWrapper
-      onClick={() => setRotate(!stateRotate)}
-      rotate={stateRotate}
-    >
-      <HamburgerIcon/>
-    </RotationWrapper>
-  )
-}
-
 export const RotationWrapperStory = () => (
-  <WithClick/>
+  <RotationWrapper>
+    <HamburgerIcon/>
+  </RotationWrapper>
 );

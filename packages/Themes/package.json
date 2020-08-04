@@ -6,6 +6,7 @@
   "homepage": "https://github.com/Hodrobond/BlogComponents/tree/master/packages/themes#readme",
   "license": "ISC",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "test": "__tests__"
   },

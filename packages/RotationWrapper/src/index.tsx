@@ -1,10 +1,10 @@
-import React, { FunctionComponent } from "react";
-import styled, { StyledFunction } from "styled-components";
+import React, { FunctionComponent, useState } from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 export interface RotationWrapperProps {
-  rotate: boolean
-  onClick: () => void
+  children: React.ReactNode
+  onRotate?: (isRotated: boolean) => void
   s?: {
     display?: string | undefined
     zIndex?: string | undefined
@@ -33,22 +33,30 @@ const IconButtonWrapper = styled.div<IconButtonWrapperProps>`
 
 const RotationWrapper: FunctionComponent<RotationWrapperProps> = ({
   children,
-  rotate,
-  onClick,
+  onRotate,
   s,
-}) => (
-  <IconButtonWrapper
-    rotate={rotate}
-    onClick={onClick}
-    s={s}
-  >
-    {children}
-  </IconButtonWrapper>
-);
+}) => {
+  const [stateRotate, setRotate] = useState(false);
+
+  return (
+    <IconButtonWrapper
+      onClick={() => {
+        setRotate(!stateRotate);
+        if (typeof onRotate === 'function') {
+          onRotate(!stateRotate);
+        }
+      }}
+      rotate={stateRotate}
+      s={s}
+    >
+      {children}
+    </IconButtonWrapper>
+  );
+};
 
 RotationWrapper.propTypes = {
-  rotate: PropTypes.bool,
-  onClick: PropTypes.func,
+  children: PropTypes.node,
+  onRotate: PropTypes.func,
   s: PropTypes.shape({
     display: PropTypes.string,
     zIndex: PropTypes.string,

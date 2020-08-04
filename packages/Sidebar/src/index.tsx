@@ -7,6 +7,7 @@ import RotationWrapper from '@hodrobond/ui-rotationwrapper';
 import Wrapper from './components/Wrapper';
 
 export interface SidebarInterface {
+  children: React.ReactNode
   title: string,
 }
 
@@ -45,8 +46,7 @@ const Sidebar: FunctionComponent<SidebarInterface> = ({
     >
       <RotationWrapperContainer open={open}>
         <RotationWrapper
-          onClick={() => setOpen(!open)}
-          rotate={open}
+          onRotate={(isRotated: boolean) => { setOpen(isRotated); }}
           s={{
             zIndex: '901',
           }}
@@ -65,6 +65,7 @@ const Sidebar: FunctionComponent<SidebarInterface> = ({
 };
 
 Sidebar.propTypes = {
+  children: PropTypes.node,
   title: PropTypes.string,
 };
 

@@ -1,13 +1,13 @@
-import React, { FunctionComponent } from 'react'
-import styled from "styled-components";
+import React, { FunctionComponent } from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 export interface HamburgerIconProps {
-  fill?: string,
+  fill?: string
 }
 
 const HamburgerStyle = styled.svg<HamburgerIconProps>`
-  fill: ${props => (props.fill ? props.fill : "var(--primary-color)")};
+  fill: ${(props) => (props.fill ? props.fill : 'var(--primary-color)')};
 `;
 
 const HamburgerIcon: FunctionComponent<HamburgerIconProps> = ({

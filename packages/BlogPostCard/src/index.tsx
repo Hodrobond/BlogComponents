@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { FunctionComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import DateDisplay from '@hodrobond/ui-datedisplay';
@@ -7,11 +7,11 @@ import Link from '@hodrobond/ui-link';
 
 export interface BlogPostCardInterface {
   title: {
-    text: string,
-    link: string,
+    text: string
+    link?: string
   },
-  date: string,
-  description: string,
+  date: string
+  description: string
 }
 
 const Title = styled.h3`
@@ -26,22 +26,22 @@ const BlogPostContainer = styled.div`
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
 `;
 
-const BlogPostCard = ({
+const BlogPostCard: FunctionComponent<BlogPostCardInterface> = ({
   title: { text, link },
   date,
   description,
-}: BlogPostCardInterface) => (
+}) => (
   <BlogPostContainer>
     <Title><Link href={link} target="_blank">{text}</Link></Title>
     <DateDisplay date={date} />
-    <Text s={{ textAlign: 'left' }} >
+    <Text s={{ textAlign: 'left' }} data-test="description" >
       {description}
     </Text>
   </BlogPostContainer>
 );
 
 BlogPostCard.propTypes = {
-  title: PropTypes.shape({
+  title: PropTypes.exact({
     text: PropTypes.string.isRequired,
     link: PropTypes.string,
   }).isRequired,

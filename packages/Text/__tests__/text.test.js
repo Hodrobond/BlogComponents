@@ -1,7 +1,17 @@
-'use strict';
+import React from 'react';
+import { mount } from 'enzyme';
 
-const text = require('..');
+import Text from '..';
 
-describe('text', () => {
-    it('needs tests');
+const testContent = 'Something something test';
+
+describe('RotationWrapper', () => {
+  it('Default', () => {
+    const wrapper = mount(
+      <Text>
+        {testContent}
+      </Text>,
+    );
+    expect(wrapper.text()).toEqual(testContent);
+  });
 });

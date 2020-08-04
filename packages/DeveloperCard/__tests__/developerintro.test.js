@@ -1,7 +1,21 @@
-'use strict';
+import React from 'react';
+import { mount } from 'enzyme';
 
-const developerintro = require('..');
+import DeveloperCard from '..';
 
-describe('developerintro', () => {
-    it('needs tests');
+describe('Developer Card', () => {
+  it('Default', () => {
+    const wrapper = mount(
+      <DeveloperCard />,
+    );
+    expect(wrapper.find('img')).toHaveLength(1);
+  });
+  it('Can overwrite image url', () => {
+    const wrapper = mount(
+      <DeveloperCard
+        imageUrl="https://www.google.com"
+      />,
+    );
+    expect(wrapper.find('img').prop('src')).toEqual({ imageUrl: 'https://www.google.com' });
+  });
 });

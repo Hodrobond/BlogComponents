@@ -1,7 +1,22 @@
-'use strict';
+import React from 'react';
+import { mount } from 'enzyme';
 
-const link = require('..');
+import Link from '..';
 
 describe('Link', () => {
-    it('needs tests');
+  it('Default', () => {
+    const wrapper = mount(
+      <Link />,
+    );
+    expect(wrapper.find('a')).toHaveLength(1);
+  });
+  it('Can add children', () => {
+    const testContent = 'Something something test';
+    const wrapper = mount(
+      <Link>
+        {testContent}
+      </Link>,
+    );
+    expect(wrapper.find('a').text()).toEqual(testContent);
+  });
 });

@@ -1,16 +1,15 @@
-import * as React from 'react'
+import React, { FunctionComponent } from 'react';
 import PropTypes from 'prop-types';
-import moment from 'moment';
-import styled from 'styled-components';
+import moment from 'moment/min/moment-with-locales';
 import Text from '@hodrobond/ui-text';
 
 export interface DateDisplayInterface {
-  date: string,
-  languageCode?: string,
-  format?: string,
+  date: string
+  languageCode?: string
+  format?: string
 }
 
-const DateDisplay = ({
+const DateDisplay: FunctionComponent<DateDisplayInterface> = ({
   date,
   languageCode = 'en',
   format = 'MMMM Do, YYYY',

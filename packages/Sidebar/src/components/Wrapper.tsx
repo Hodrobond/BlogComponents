@@ -4,8 +4,9 @@ import styled from 'styled-components';
 import Text from '@hodrobond/ui-text';
 
 export interface WrapperInterface {
-  title: string,
-  open: boolean,
+  children: React.ReactNode
+  title: string
+  open: boolean
 }
 
 interface WrapperProps {
@@ -61,6 +62,7 @@ const Wrapper: FunctionComponent<WrapperInterface> = ({
 );
 
 Wrapper.propTypes = {
+  children: PropTypes.node,
   title: PropTypes.string,
   open: PropTypes.bool,
 };
