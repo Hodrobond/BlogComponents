@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import PropTypes from 'prop-types';
-import moment from 'moment/min/moment-with-locales';
+import moment from 'moment';
+import 'moment/min/locales';
 import Text from '@hodrobond/ui-text';
 
 export interface DateDisplayInterface {
