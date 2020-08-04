@@ -1,6 +1,6 @@
 {
   "name": "@hodrobond/ui-sidebar",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "> TODO: description",
   "author": "Adam Kazberuk <hodrobond@gmail.com>",
   "homepage": "https://github.com/Hodrobond/BlogComponents/tree/master/packages/sidebar#readme",
@@ -25,9 +25,9 @@
     "url": "https://github.com/Hodrobond/BlogComponents/issues"
   },
   "dependencies": {
-    "@hodrobond/ui-hamburgericon": "^1.2.1",
-    "@hodrobond/ui-link": "^1.2.1",
-    "@hodrobond/ui-rotationwrapper": "^1.2.1",
-    "@hodrobond/ui-text": "^1.2.1"
+    "@hodrobond/ui-hamburgericon": "^1.2.2",
+    "@hodrobond/ui-link": "^1.2.2",
+    "@hodrobond/ui-rotationwrapper": "^1.2.2",
+    "@hodrobond/ui-text": "^1.2.2"
   }
 }
