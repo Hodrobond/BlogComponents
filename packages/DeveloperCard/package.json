@@ -1,6 +1,6 @@
 {
   "name": "@hodrobond/ui-developercard",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "> TODO: description",
   "author": "Adam Kazberuk <hodrobond@gmail.com>",
   "homepage": "https://github.com/Hodrobond/BlogComponents/tree/master/packages/developerintro#readme",
@@ -25,6 +25,6 @@
     "url": "https://github.com/Hodrobond/BlogComponents/issues"
   },
   "dependencies": {
-    "@hodrobond/ui-text": "^1.2.0"
+    "@hodrobond/ui-text": "^1.2.1"
   }
 }
