@@ -1,6 +1,6 @@
 {
   "name": "@hodrobond/ui-blogpostcard",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "> TODO: description",
   "author": "Adam Kazberuk <hodrobond@gmail.com>",
   "homepage": "https://github.com/Hodrobond/BlogComponents/tree/master/packages/blogPostCart#readme",
@@ -18,8 +18,8 @@
     "check-types": "tsc -p ."
   },
   "dependencies": {
-    "@hodrobond/ui-datedisplay": "^1.2.2",
-    "@hodrobond/ui-link": "^1.2.2",
-    "@hodrobond/ui-text": "^1.2.2"
+    "@hodrobond/ui-datedisplay": "^1.2.4",
+    "@hodrobond/ui-link": "^1.2.4",
+    "@hodrobond/ui-text": "^1.2.4"
   }
 }
