@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import BlogPostCard from '..';
+import BlogPostCard from '../src';
 
 const testDate = '2017-06-13T16:00:00.000Z';
 

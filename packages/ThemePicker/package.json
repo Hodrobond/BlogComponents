@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@hodrobond/ui-hamburgericon": "^1.2.0",
-    "@hodrobond/ui-themes": "file:../Themes",
+    "@hodrobond/ui-themes": "^1.2.0",
     "@hodrobond/ui-themewrapper": "^1.2.0"
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import RotationWrapper from '..';
+import RotationWrapper from '../src';
 
 const testContent = 'Something something test';
 

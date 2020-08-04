@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import DeveloperCard from '..';
+import DeveloperCard from '../src';
 
 describe('Developer Card', () => {
   it('Default', () => {

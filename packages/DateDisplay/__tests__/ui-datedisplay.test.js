@@ -2,7 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 
-import DateDisplay from '..';
+import DateDisplay from '../src';
 
 const testDate = '2017-06-13T16:00:00.000Z';
 

@@ -25,6 +25,6 @@
     "url": "https://github.com/Hodrobond/BlogComponents/issues"
   },
   "dependencies": {
-    "@hodrobond/ui-text": "file:../Text"
+    "@hodrobond/ui-text": "^1.2.0"
   }
 }

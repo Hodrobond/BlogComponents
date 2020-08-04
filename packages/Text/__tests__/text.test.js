@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import Text from '..';
+import Text from '../src';
 
 const testContent = 'Something something test';
 

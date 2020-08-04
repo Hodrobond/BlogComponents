@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import HamburgerIcon from '..';
+import HamburgerIcon from '../src';
 
 describe('HamburgerIcon', () => {
   it('Default', () => {

@@ -18,8 +18,8 @@
     "check-types": "tsc -p ."
   },
   "dependencies": {
-    "@hodrobond/ui-datedisplay": "file:../DateDisplay",
-    "@hodrobond/ui-link": "file:../Link",
-    "@hodrobond/ui-text": "file:../Text"
+    "@hodrobond/ui-datedisplay": "^1.2.0",
+    "@hodrobond/ui-link": "^1.2.0",
+    "@hodrobond/ui-text": "^1.2.0"
   }
 }

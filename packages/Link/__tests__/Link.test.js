@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import Link from '..';
+import Link from '../src';
 
 describe('Link', () => {
   it('Default', () => {

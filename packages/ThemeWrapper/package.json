@@ -22,7 +22,7 @@
     "url": "https://github.com/Hodrobond/BlogComponents/issues"
   },
   "dependencies": {
-    "@hodrobond/ui-hamburgericon": "file:../HamburgerIcon",
-    "@hodrobond/ui-themes": "file:../Themes"
+    "@hodrobond/ui-hamburgericon": "^1.2.0",
+    "@hodrobond/ui-themes": "^1.2.0"
   }
 }

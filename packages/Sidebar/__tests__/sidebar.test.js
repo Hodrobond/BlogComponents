@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import Sidebar from '..';
+import Sidebar from '../src';
 
 const testText = 'Something something test';
 const testContent = (

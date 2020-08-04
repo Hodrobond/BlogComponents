@@ -25,9 +25,9 @@
     "url": "https://github.com/Hodrobond/BlogComponents/issues"
   },
   "dependencies": {
-    "@hodrobond/ui-hamburgericon": "file:../HamburgerIcon",
-    "@hodrobond/ui-link": "file:../Link",
-    "@hodrobond/ui-rotationwrapper": "file:../RotationWrapper",
-    "@hodrobond/ui-text": "file:../Text"
+    "@hodrobond/ui-hamburgericon": "^1.2.0",
+    "@hodrobond/ui-link": "^1.2.0",
+    "@hodrobond/ui-rotationwrapper": "^1.2.0",
+    "@hodrobond/ui-text": "^1.2.0"
   }
 }
