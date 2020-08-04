@@ -20,5 +20,8 @@
   },
   "bugs": {
     "url": "https://github.com/Hodrobond/BlogComponents/issues"
+  },
+  "dependencies": {
+    "@types/storybook__addon-knobs": "^5.2.1"
   }
 }

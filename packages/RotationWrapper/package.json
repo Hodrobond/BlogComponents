@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@hodrobond/ui-developercard": "^1.2.4",
-    "@hodrobond/ui-hamburgericon": "^1.2.4"
+    "@hodrobond/ui-hamburgericon": "^1.2.4",
+    "@types/storybook__addon-knobs": "^5.2.1"
   }
 }

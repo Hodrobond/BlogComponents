@@ -20,6 +20,9 @@
   "dependencies": {
     "@hodrobond/ui-datedisplay": "^1.2.4",
     "@hodrobond/ui-link": "^1.2.4",
-    "@hodrobond/ui-text": "^1.2.4"
+    "@hodrobond/ui-text": "^1.2.4",
+    "@types/storybook__addon-knobs": "^5.2.1",
+    "install": "^0.13.0",
+    "npm": "^6.14.7"
   }
 }

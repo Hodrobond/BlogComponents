@@ -1,7 +1,6 @@
 import React from 'react';
-import { withKnobs, text } from "@storybook/addon-knobs";
+import { withKnobs, text } from '@storybook/addon-knobs';
 import BlogPostCard from '../src';
-import styled from 'styled-components';
 
 export default {
   component: BlogPostCard,
@@ -24,8 +23,9 @@ export const SingleCard = () => (
 
 export const MultiCard = () => (
   <div>
-    {[1,2,3].map(num => (
+    {[1, 2, 3].map((num) => (
       <BlogPostCard
+        key={`Blog_card_${num}`}
         title={{
           text: text(`Title ${num}`, `title ${num}`),
           link: text('Link', 'https://www.google.com'),
