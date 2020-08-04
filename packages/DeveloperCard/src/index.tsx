@@ -21,19 +21,11 @@ const ImageWrapper = styled.img`
   margin: 0.5rem;
 `;
 
-export interface DeveloperCardInterface {
-  imageUrl?: string
-}
-
-const DeveloperCard: FunctionComponent<DeveloperCardInterface> = (imageUrl) => (
+const DeveloperCard: FunctionComponent<DeveloperCardInterface> = () => (
   <CardContainer>
-    <ImageWrapper src={imageUrl || image}/>
+    <ImageWrapper src={image}/>
     <Text>Written by<strong> Adam Kazberuk </strong>who is in San Francisco.</Text>
   </CardContainer>
 );
-
-DeveloperCard.propTypes = {
-  imageUrl: PropTypes.string,
-};
 
 export default DeveloperCard;
