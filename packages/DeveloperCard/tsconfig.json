@@ -5,7 +5,7 @@
     "rootDir": "src",
     "jsx": "react"
   },
-  "include": ["d.ts"],
+  "include": ["./src/d.ts"],
   "exclude": [
     "node_modules",
     "**/*.test.ts",
