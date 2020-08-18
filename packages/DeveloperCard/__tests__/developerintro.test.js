@@ -10,7 +10,7 @@ describe('Developer Card', () => {
     );
     expect(wrapper.find('img')).toHaveLength(1);
   });
-  // it('Can overwrite image url', () => {
+  // it('Can overwrite image url', () => { 
   //   const wrapper = mount(
   //     <DeveloperCard
   //       imageUrl="https://www.google.com"
