@@ -5,7 +5,7 @@ import 'moment/min/locales';
 import Text from '@hodrobond/ui-text';
 
 export interface DateDisplayInterface {
-  date: string
+  date: string | number
   languageCode?: string
   format?: string
 }

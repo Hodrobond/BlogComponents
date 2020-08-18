@@ -2,7 +2,6 @@ import React, { FunctionComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Text from '@hodrobond/ui-text';
-
 import image from './assets/profile-pic.jpg';
 
 const CardContainer = styled.div`
@@ -21,7 +20,7 @@ const ImageWrapper = styled.img`
   margin: 0.5rem;
 `;
 
-const DeveloperCard: FunctionComponent<DeveloperCardInterface> = () => (
+const DeveloperCard: FunctionComponent = () => (
   <CardContainer>
     <ImageWrapper src={image}/>
     <Text>Written by<strong> Adam Kazberuk </strong>who is in San Francisco.</Text>

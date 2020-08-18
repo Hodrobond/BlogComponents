@@ -8,7 +8,7 @@ import Wrapper from './components/Wrapper';
 
 export interface SidebarInterface {
   children: React.ReactNode
-  title: string,
+  title?: string,
 }
 
 interface SidebarBlockProps {

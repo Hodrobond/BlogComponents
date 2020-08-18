@@ -8,9 +8,4 @@ export default {
   decorators: [withKnobs],
 };
 
-export const DeveloperCardStory = () => (
-  <DeveloperCard
-    date={date('Date', new Date('2017-06-13T16:00:00.000Z'))}
-    languageCode={text('Language Code', 'en')}
-    format={text('Date Format', 'MMMM Do, YYYY')}
-  />);
+export const DeveloperCardStory = () => <DeveloperCard/>;
